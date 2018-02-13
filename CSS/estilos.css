@@ -10,7 +10,7 @@
 }
 
 div{
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 /* SECTIONING AND STRUCTURING */
@@ -156,7 +156,7 @@ background: transparent;
 
 }
         .col100{
-            border: purple solid 5px;
+            /* border: purple solid 5px; */
             padding: 10px;
             width: 100%;
             align-items: center;
@@ -232,8 +232,16 @@ background: transparent;
             flex-flow: row nowrap;
             justify-content: flex-end;
         }
+
+
+        
+
+        .col100 h1{
+            margin-bottom: 25px;
+            padding-bottom: 15PX;
+            border-bottom: #d80027 solid 3px;
+        }
 .grid{
-    /* dadada */
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
@@ -385,7 +393,7 @@ background: transparent;
     .colizquierda{
         width: 33%;
         flex-grow: 1;
-        border: solid 1px greenyellow;
+        /* border: solid 1px greenyellow; */
         text-align: justify;
         padding: 20px;
         /* así evito que las palabras se salgan del div */
@@ -406,7 +414,7 @@ background: transparent;
     .colcentro{
         /* width: 33%; */
         flex-grow: 1;
-        border: solid 1px greenyellow;
+        /* border: solid 1px greenyellow; */
         text-align: justify;
         display: flex;
         flex-direction: column;
@@ -428,7 +436,7 @@ background: transparent;
         width: 33%;
         flex-grow: 1;
 
-        border: solid 1px greenyellow;
+        /* border: solid 1px greenyellow; */
         /* ponemos los iconos en columna */
         display: flex;
         /* flex-direction: column; */
@@ -508,19 +516,7 @@ footer .rrss_icon:hover{
 
 /* COMPRA, Barra sticky*/
 
-.pegajoso{
-    /* Que se mantenga siempre a la vista */
-    /* position: fixed; */
-    top: 160px; 
-    text-align: left;
-    /* Que, además de bajar cuando hacemos scroll, sea visible por encima de los demás
-    elementos  */
-    z-index: 1;
-}
-.espaciopegajoso{
-    width: 300px;
-    height: 82px;
-}
+
 
 .botoncompra{
     width: 300px;
@@ -549,7 +545,14 @@ footer .rrss_icon:hover{
     display: flex;
     justify-content:space-between; 
 }
+
+a.paginacion {
+    font-size: 10px;
+    text-decoration: none;
+    padding: 0;
+}
 .inferior{
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 .izquierda, .derecha{
@@ -558,10 +561,9 @@ footer .rrss_icon:hover{
 .pagina{
     flex-grow: 0.8;
 }
-.paginacion button{
+a.paginacion button{
     border-radius: 10px;
     width: 90%;
-    height: 100%;
     background-color: #D80027;
     color: white;
     font-size: 22px;  
@@ -582,37 +584,42 @@ footer .rrss_icon:hover{
     padding: 5px;
     font-size: 22px;  
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 .info button:hover{
     background-color: #ff0000;
 }
 
 .info h5{margin: 10px 0px;}
+.info p{margin: 10px 0px; margin-bottom: 25px}
 
  
 .contenedortarjetas{
-    border: blue dashed 4px;
+    /* border: blue dashed 4px; */
     display: grid;
     /* 3 columnas */
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(auto-fit,410px);
     /* tantas filas como sea preciso */
-    grid-template-rows: repeat(auto-fit,1fr);
+    grid-template-rows: repeat(3,1fr);
     grid-gap: 20px;
-    align-items: baseline;
-    font-size: 18px;
-    justify-content: space-around;
+    /* align-items: center; */
+    justify-content: space-around;font-size: 18px;
     clear: both;
     
 }
+
+.reverse{
+    grid-auto-flow: dense;
+}
 .tarjeta{
-    width: 400px;
+    width: 410px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     align-self: center;
-    /* align-items: flex-end; */
+    border: #D80027 5px solid;
+    border-radius: 5px;
 }
 .sa{justify-content: space-around;}
 .imagen{
@@ -803,19 +810,18 @@ div.detadescripcion{
     .contenedortarjetas{
         display: grid;
         /* cambiamos a 2 columnas para no tener que encoger las imágenes */
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(auto-fit,1fr);
         /* tantas filas como sea preciso */
-        grid-template-rows: repeat(auto-fit,1fr);
+        grid-template-rows: repeat(2,1fr);
         grid-gap: 20px;
-        justify-content: center;
-        align-content: center;
+        justify-content: space-around;
         align-items: baseline;
         font-size: 18px;
     }
 
     /* Ajustamos el tamaño de las tarjetas */
     .tarjeta{
-        width: 400px;
+        /* width: 400px; */
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -871,13 +877,14 @@ div.detadescripcion{
     .contenedortarjetas{
         /* pasamos a disponer las fichas en 1 sola columna
         por razones de espacio */
-        grid-template-columns:repeat(1,1fr);
+        grid-template-columns:repeat(auto-fit,1fr);
         /* tantas filas como sea preciso */
-        grid-template-rows: repeat(auto-fit,1fr);
+        grid-template-rows: repeat(1,1fr);
         grid-gap: 15px;
         align-items: baseline;
         font-size: 15px;
-        justify-content: space-between;
+        justify-content: center;
+    }
 
 }
 
@@ -923,6 +930,7 @@ header nav{
     font-size: 20px;
 }
 .colcentro{
+
     width: fit-content;
 }
 .colderecha{
@@ -978,12 +986,13 @@ h1.deta{
 
 @media (max-width:605px){
     .colcentro{
-        display: none;
+        /* display: none; */
+
     }
-    .colcentro2{
-        display: initial;
-        flex-direction: row;
-        justify-content: space-between;
+    /* .colcentro2{ */
+        /* display: initial; */
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
     }
 
     .contenedorfotos img{
@@ -1024,7 +1033,13 @@ h1.deta{
 
 
 /* ...................para móviles....................... */
-@media (max-width: 442px){
+@media (max-width: 481px){
+
+    .colcentro{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
 
     .hero a{
         margin-bottom: 360px;
@@ -1052,8 +1067,21 @@ h1.deta{
         }
 
         .tarjeta{
-            width: 300px;
+            width: 300px;}
+            /* los cambios en el tamaño de imagen afectan a contenedor de tarjetas, que ahora ajustamos */
+            .contenedortarjetas{
+                /* border: blue dashed 4px; */
+                display: grid;
+                /* 3 columnas */
+                grid-template-columns:repeat(auto-fit,300px);
+                /* tantas filas como sea preciso */
+                grid-template-rows: repeat(3,1fr);
+                grid-gap: 20px;
+                /* align-items: center; */
+                justify-content: space-around;
+                font-size: 18px;
+                clear: both;
+                
+            }
 
-
-
-}
+}}

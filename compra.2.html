@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compra</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+
+<div class="grancontenedor">
+    <!-- HEADER CON BARRA DE NAVEGACIÓN -->
+
+    <header>
+        
+        <a href="/">
+            <img class="logoimagen" src="./img/home.svg">
+        </a>
+        <p class="burguer"><i class="fas fa-bars"></i></p>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a class="activo" href="./compra.html">Compra</a></li>
+                <li><a href="./alquiler.html">Alquiler</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="hr_header">
+
+    <!-- BREADCRUMBS con enlaces sucesivos -->
+    <div class="col100 flex_izq">
+        <div class="barra_breadcrumbs">
+            <a href="/">Inicio</a><span> <i class="fas fa-angle-right"></i></span>
+            <a class="activo" href="./compra.html">Compra</a>
+        </div>
+    </div>
+    <!-- FIN de col100 -->
+
+
+    <!-- MENÚ DE PAGINACIÓN SUPERIOR -->
+
+    <div class="paginacion"> 
+        <a href="./compra.html" class="paginacion"><button class="izquierda"><i class="fas fa-angle-left"></i></button></a>
+        <a href="./compra.html" class="paginacion"><button class="pagina">1</button></a>
+        <a href="./compra.2.html" class="paginacion"><button class="pagina">2</button></a>
+        <a href="./compra.3.html" class="paginacion"><button class="pagina">3</button></a>
+        <a href="./compra.4.html" class="paginacion"><button class="pagina">4</button></a>
+        <a href="./compra.5.html" class="paginacion"><button class="pagina">5</button></a>
+        <a href="./compra.6.html" class="paginacion"><button class="pagina">6</button></a>
+        <a href="./compra.7.html" class="paginacion"><button class="pagina">7</button></a>
+        <a href="./compra.8.html" class="paginacion"><button class="pagina">8</button></a>
+        <a href="./compra.9.html" class="paginacion"><button class="pagina">9</button></a>
+        <a href="./compra.10.html" class="paginacion"><button class="pagina">10</button></a>
+        <a href="./compra.3.html" class="paginacion"><button class="derecha"><i class="fas fa-angle-right"></i></button></a>
+    </div>
+
+<!-- TARJETAS DE INMUEBLES en filas y columnas -->
+
+<div class="contenedortarjetas">
+    
+        <div class="tarjeta">
+             <img class="imagen" src="./img/detalle/c5.jpg">
+             <div class="info">
+                 <h5>Comunidad Alhambra del mar, 6</h5>
+                 <p>España, Costa del Sol, Marbella.</p>
+                 <div class="grid">
+ 
+                     <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                           <p>4 dormitorios</p></div>
+                     <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                               <p>5 cuartos de baño</p></div>
+                     <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                               <p>395,36 m²</p></div>
+                               <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                 <p>Jardín</p></div>
+ 
+                 </div>
+               
+                 <div class="col100 sa">
+                     <div>
+                        
+                        <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                     </div>
+                     
+                    <p>46.000.000 €</p>
+                 </div>
+                 <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+             </div>
+         </div>
+         
+         <div class="tarjeta">
+             <img class="imagen" src="./img/comprar/5.jpg">
+             <div class="info">
+                     <div class="info">
+                             <h5>Mansión en Avenida Juan Bellomonte</h5>
+                             <p>España, Costa del Sol, Marbella.</p>
+                             <div class="grid">
+             
+                                 <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                       <p>5 dormitorios</p></div>
+                                 <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                           <p>4 cuartos de baño</p></div>
+                                 <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                           <p>395,36 m²</p></div>
+                                 <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+                                 
+             
+                             </div>
+                           
+                             <div class="col100 sa">
+                                <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                <p>78.000.000 €</p>
+                             </div>
+                             <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                         </div>
+         </div>
+         </div>
+ 
+         <div class="tarjeta">
+                 <img class="imagen" src="./img/comprar/6.jpg">
+                 
+             <div class="info"> 
+                     <div class="info">
+                             <h5>Mansión, C/ Manuel García Algabeño, 8</h5>
+                             <p>España, Costa del Sol, Marbella.</p>
+                             <div class="grid">
+             
+                                 <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                       <p>2 dormitorios</p></div>
+                                 <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                           <p>5 cuartos de baño</p></div>
+                                 <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                           <p>395,36 m²</p></div>
+                                 <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+             
+                             </div>
+                           
+                             <div class="col100 sa">
+                                <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                <p>51.000.000 €</p>
+                             </div>
+                             <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                         </div>
+             </div>   
+         </div>
+         <div class="tarjeta">
+                 <img class="imagen" src="./img/comprar/4.jpg">
+                 
+             <div class="info"> 
+                     <div class="info">
+                             <h5>Mansión, C/ Manuel García Algabeño</h5>
+                             <p>España, Costa del Sol, Marbella.</p>
+                             <div class="grid">
+             
+                                 <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                       <p>3 dormitorios</p></div>
+                                 <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                           <p>3 cuartos de baño</p></div>
+                                 <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                           <p>395,36 m²</p></div>
+                                 <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+             
+                             </div>
+                           
+                             <div class="col100 sa">
+                                <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                <p>46.000.000 €</p>
+                             </div>
+                             <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                         </div>
+             </div>   
+         </div>
+         <div class="tarjeta">
+                 <img class="imagen" src="./img/comprar/2.jpg">
+                 
+             <div class="info"> 
+                     <div class="info">
+                             <h5>Mansión, C/ Manuel Garrido</h5>
+                             <p>España, Costa del Sol, Marbella.</p>
+                             <div class="grid">
+             
+                                 <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                       <p>5 dormitorios</p></div>
+                                 <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                           <p>4 cuartos de baño</p></div>
+                                 <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                           <p>395,36 m²</p></div>
+                                 <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+             
+                             </div>
+                           
+                             <div class="col100 sa">
+                                <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                <p>98.000.000 €</p>
+                             </div>
+                             <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                         </div>
+             </div>   
+         </div>
+         <div class="tarjeta">
+                 <img class="imagen" src="./img/comprar/3.jpg">
+                 <div class="info">
+                         <div class="info">
+                                 <h5>Mansión, C/ Matias Lara</h5>
+                                 <p>España, Costa del Sol, Marbella.</p>
+                                 <div class="grid">
+                 
+                                     <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                           <p>4 dormitorios</p></div>
+                                     <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                               <p>5 cuartos de baño</p></div>
+                                     <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                               <p>395,36 m²</p></div>
+                                     <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+                 
+                                 </div>
+                               
+                                 <div class="col100 sa">
+                                    <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                    <p>245.000.000 €</p>
+                                 </div>
+                                 <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                             </div>
+                 </div>
+             </div>
+             
+             <div class="tarjeta">
+                 <img class="imagen" src="./img/comprar/7.jpg">
+                 <div class="info">
+                         <div class="info">
+                                 <h5>Mansión, C/ Santa Rosa</h5>
+                                 <p>España, Costa del Sol, Marbella.</p>
+                                 <div class="grid">
+                 
+                                     <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                           <p>3 dormitorios</p></div>
+                                     <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                               <p>2 cuartos de baño</p></div>
+                                     <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                               <p>395,36 m²</p></div>
+                                     <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+                                     
+                 
+                                 </div>
+                               
+                                 <div class="col100 sa">
+                                    <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                    <p>24.000.000 €</p>
+                                 </div>
+                                 <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                             </div>
+             </div>
+             </div>
+     
+             <div class="tarjeta">
+                     <img class="imagen" src="./img/comprar/8.jpg">
+                     
+                 <div class="info"> 
+                         <div class="info">
+                                 <h5>Mansión, C/ Virgen del Carmen, 6</h5>
+                                 <p>España, Costa del Sol, Marbella.</p>
+                                 <div class="grid">
+                 
+                                     <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                           <p>2 dormitorios</p></div>
+                                     <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                               <p>3 cuartos de baño</p></div>
+                                     <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                               <p>395,36 m²</p></div>
+                                     <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+                 
+                                 </div>
+                               
+                                 <div class="col100 sa">
+                                    <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                    <p>52.000.000 €</p>
+                                 </div>
+                                 <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                             </div>
+                 </div>   
+             </div>
+             <div class="tarjeta">
+                     <img class="imagen" src="./img/comprar/9.jpg">
+                     
+                 <div class="info"> 
+                         <div class="info">
+                                 <h5>Mansión en avenida Acapulco</h5>
+                                 <p>España, Costa del Sol, Marbella.</p>
+                                 <div class="grid">
+                 
+                                     <div><img width="20px" src="./IMG/detalle/kings-size-bed.svg" alt="">
+                                           <p>6 dormitorios</p></div>
+                                     <div> <img width="20px" src="./IMG/detalle/sink.svg" alt="">
+                                               <p>4 cuartos de baño</p></div>
+                                     <div><img width="20px" src="./IMG/detalle/plans.svg" alt="">
+                                               <p>395,36 m²</p></div>
+                                     <div><img width="20px" src="./IMG/comprar/forest.svg" alt="">
+                                             <p>Jardín</p></div>
+                 
+                                 </div>
+                               
+                                 <div class="col100 sa">
+                                    <div>
+                         <img width="20px" src="./img/detalle/dollar-bills.svg" alt="">
+                        <p>Precio</p>  
+                     </div> 
+                                    <p>77.000.000 €</p>
+                                 </div>
+                                 <a href="./compra_detalle.html"><button>Ver detalles</button></a>
+                             </div>
+                 </div>   
+             </div>
+                     
+ </div>
+ <!-- fin de col100 contenedor de tarjetas -->
+
+
+
+
+
+
+
+
+<!-- MENÚ DE PAGINACIÓN INFERIOR -->
+<div class="paginacion inferior">
+
+        <a href="./compra.html" class="paginacion"><button class="izquierda"><i class="fas fa-angle-left"></i></button></a>
+        <a href="./compra.html" class="paginacion"><button class="pagina">1</button></a>
+        <a href="./compra.2.html" class="paginacion"><button class="pagina">2</button></a>
+        <a href="./compra.3.html" class="paginacion"><button class="pagina">3</button></a>
+        <a href="./compra.4.html" class="paginacion"><button class="pagina">4</button></a>
+        <a href="./compra.5.html" class="paginacion"><button class="pagina">5</button></a>
+        <a href="./compra.6.html" class="paginacion"><button class="pagina">6</button></a>
+        <a href="./compra.7.html" class="paginacion"><button class="pagina">7</button></a>
+        <a href="./compra.8.html" class="paginacion"><button class="pagina">8</button></a>
+        <a href="./compra.9.html" class="paginacion"><button class="pagina">9</button></a>
+        <a href="./compra.10.html" class="paginacion"><button class="pagina">10</button></a>
+        <a href="./compra.3.html" class="paginacion"><button class="derecha"><i class="fas fa-angle-right"></i></button></a>
+    </div>
+
+<!--************************************** FOOTER************************************ -->
+
+<footer>
+    <a class="top" href="">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+    <div class="colizquierda white">
+        <p class="white">Zu Hause.GmbH</p>
+        <p><i class="fas fa-map-marker"></i> Av. Antonio Belón, 5</p>
+        <p> CP 29601, Marbella, España</p>
+        <p><i class="fas fa-phone-square"></i> 0039 13412 131</p>
+        <p><i class="fas fa-at"></i> ZuHausen@immobilienkrupp.de</p>
+    </div>
+
+    <!-- En la columna del medio ponemos un índice -->
+    <div class="colcentro">
+            <a href="/">Inicio</a>
+            <a class="activo" href="./compra.html">Compra</a>
+            <a href="./alquiler.html">Alquiler</a>
+            <a href="./contacto.html">Contacto</a>
+    </div>
+
+    <div class="col100 colcentro2">
+        <a href="/">Inicio</a>
+        <a class="activo" href="./compra.html">Compra</a>
+        <a href="./alquiler.html">Alquiler</a>
+        <a href="./contacto.html">Contacto</a>            
+    </div>
+
+    <div class="colderecha">
+        <div class="rrss">
+        <a class="rrss_icon" href=""><i class="fab fa-facebook"></i></a>
+        <a class="rrss_icon" href=""><i class="fab fa-twitter-square"></i></a>
+        <a class="rrss_icon" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- fin de rrss -->
+    </div>
+    <!-- FIN COLDERECHA -->
+
+    <div class="col100 colderecha2">
+        <div class="rrss">
+            <a class="rrss_icon" href=""><i class="fab fa-facebook"></i></a>
+            <a class="rrss_icon" href=""><i class="fab fa-twitter-square"></i></a>
+            <a class="rrss_icon" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- FIN DE COL100 COLDERECHA2 -->
+
+    <!-- Enlaces a aviso legal e información de cookies -->
+    <div class="col100">
+        <div class="legales">
+            <a href="./contacto.html#avisolegal">Aviso Legal</a>
+    
+            <a href="./contacto.html#cookies">Cookies</a>
+        </div>
+        <!-- fin de legales -->
+    </div>
+    <!-- FIN DE COL100  -->
+
+    <div class="col100 minifooter white">
+        <p>&reg; 2.018 Zu Hause.GmbH</p>
+    </div>
+
+
+</footer>
+
+
+</div>
+<!-- FIN DE GRANCONTENEDOR -->
+
+</body>
+</html>
