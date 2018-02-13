@@ -233,6 +233,7 @@ background: transparent;
             justify-content: flex-end;
         }
 .grid{
+    /* dadada */
     display: grid;
     grid-template-columns:repeat(2, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
