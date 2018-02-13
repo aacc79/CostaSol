@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compra</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+
+<div class="grancontenedor">
+    <!-- HEADER CON BARRA DE NAVEGACIÓN -->
+
+    <header>
+        
+        <a href="/">
+            <img class="logoimagen" src="./img/home.svg">
+        </a>
+        <p class="burguer"><i class="fas fa-bars"></i></p>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a class="activo" href="./compra.html">Compra</a></li>
+                <li><a href="./alquiler.html">Alquiler</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr class="hr_header">
+
+    <!-- BREADCRUMBS con enlaces sucesivos -->
+    <div class="col100 flex_izq">
+        <div class="barra_breadcrumbs">
+            <a href="/">Inicio</a><span> <i class="fas fa-angle-right"></i></span>
+            <a class="activo" href="./compra.html">Compra</a>
+        </div>
+    </div>
+    <!-- FIN de col100 -->
+
+    <!-- Barra sticky -->
+
+    <div class="pegajoso">
+        <button class="botoncompra">
+           Guardar seleccionados &nbsp;<i class="far fa-star"></i></i>
+        </button>
+    </div>
+     
+    <!-- MENÚ DE PAGINACIÓN SUPERIOR -->
+
+    <div class="paginacion">
+        <div class="espaciopegajoso"></div>
+        
+            <button class="izquierda"><i class="fas fa-angle-left"></i></button>
+            <button class="pagina">1</button>
+            <button class="pagina">2</button>
+            <button class="pagina">3</button>
+            <button class="pagina">4</button>
+            <button class="pagina">5</button>
+            <button class="pagina">6</button>
+            <button class="pagina">7</button>
+            <button class="pagina">8</button>
+            <button class="pagina">9</button>
+            <button class="pagina">10</button>
+            <button class="derecha"><i class="fas fa-angle-right"></i></button>
+       
+    </div>
+
+
+<!-- TARJETAS DE INMUEBLES en filas y columnas -->
+
+<div class="col100 flex_der">
+        <!-- <div class="criterios"> -->
+            <div class="criterios_espacio">
+                <div class="criterios_contenido">
+                        <div>
+                                <label>Don</label>
+                                <input type="radio" name="sexo" value="Hombre">
+                                </div>
+                                <div>
+                                <label>Doña</label>
+                                <input type="radio" name="sexo" value="Mujer">
+
+                                <label>Don</label>
+                                <input type="radio" name="sexo" value="Hombre">
+                                </div>
+                                <div>
+                                <label>Doña</label>
+                                <input type="radio" name="sexo" value="Mujer">
+                                <form name="cesta" method="post" action="http://pagina.com/send.php">
+                                    <label for="so">¿Qué desea comprar?</label> <br/>
+                                    <select id="so" name="so">
+                                      <option value="obra_nueva">Obra nueva</option>
+                                      <option value="independiente">Viviendas</option>
+                                      <option value="finca">Fincas</option>
+                                      <option value="edificio">Edificios</option>
+                                      <option value="playa">Línea de playa</option>
+                                    </select> 
+
+
+                        </div>
+                </div>
+            </div>
+            <!-- fin criterios_espacio -->
+                
+        <!-- </div> -->
+    <div class="contenedortarjetas">
+
+       <div class="tarjeta">
+            <img class="imagen" src="./img/comprar/1.jpg">
+            <div class="info">
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 1</p>
+            </div>
+        </div>
+        
+        <div class="tarjeta">
+            <img class="imagen" src="./img/comprar/2.jpg">
+            <div class="info">
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 2</p>
+        </div>
+        </div>
+
+        <div class="tarjeta">
+                <img class="imagen" src="./img/comprar/3.jpg">
+                
+            <div class="info"> 
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+            </div>   
+        </div>
+        <div class="tarjeta">
+                <img class="imagen" src="./img/comprar/3.jpg">
+                
+            <div class="info"> 
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+            </div>   
+        </div>
+        <div class="tarjeta">
+                <img class="imagen" src="./img/comprar/3.jpg">
+                
+            <div class="info"> 
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+                <p>AÑADIR BOTÓN DE SELECC. Esta es la casa de la foto 3</p>
+            </div>   
+        </div>                
+    </div>
+    <!-- fin de contenedortarjetas -->
+</div>
+<!-- fin de col100 -->
+
+
+
+
+
+
+
+
+<!-- MENÚ DE PAGINACIÓN INFERIOR -->
+<div class="paginacion">
+        <div class="espaciopegajoso"></div>
+        
+            <button class="izquierda"><i class="fas fa-angle-left"></i></button>
+            <button class="pagina">1</button>
+            <button class="pagina">2</button>
+            <button class="pagina">3</button>
+            <button class="pagina">4</button>
+            <button class="pagina">5</button>
+            <button class="pagina">6</button>
+            <button class="pagina">7</button>
+            <button class="pagina">8</button>
+            <button class="pagina">9</button>
+            <button class="pagina">10</button>
+            <button class="derecha"><i class="fas fa-angle-right"></i></button>
+       
+    </div>
+
+<!--************************************** FOOTER************************************ -->
+
+<footer>
+    <a class="top" href="">
+        <i class="fas fa-chevron-circle-up"></i>
+    </a>
+
+    <div class="colizquierda white">
+        <p class="white">Zu Hause.GmbH</p>
+        <p><i class="fas fa-map-marker"></i> Av. Antonio Belón, 5</p>
+        <p> CP 29601, Marbella, España</p>
+        <p><i class="fas fa-phone-square"></i> 0039 13412 131</p>
+        <p><i class="fas fa-at"></i> ZuHausen@immobilienkrupp.de</p>
+    </div>
+
+    <!-- En la columna del medio ponemos un índice -->
+    <div class="colcentro">
+            <a href="/">Inicio</a>
+            <a class="activo" href="./compra.html">Compra</a>
+            <a href="./alquiler.html">Alquiler</a>
+            <a href="./contacto.html">Contacto</a>
+    </div>
+
+    <div class="col100 colcentro2">
+        <a href="/">Inicio</a>
+        <a class="activo" href="./compra.html">Compra</a>
+        <a href="./alquiler.html">Alquiler</a>
+        <a href="./contacto.html">Contacto</a>            
+    </div>
+
+    <div class="colderecha">
+        <div class="rrss">
+        <a class="rrss_icon" href=""><i class="fab fa-facebook"></i></a>
+        <a class="rrss_icon" href=""><i class="fab fa-twitter-square"></i></a>
+        <a class="rrss_icon" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- fin de rrss -->
+    </div>
+    <!-- FIN COLDERECHA -->
+
+    <div class="col100 colderecha2">
+        <div class="rrss">
+            <a class="rrss_icon" href=""><i class="fab fa-facebook"></i></a>
+            <a class="rrss_icon" href=""><i class="fab fa-twitter-square"></i></a>
+            <a class="rrss_icon" href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- FIN DE COL100 COLDERECHA2 -->
+
+    <!-- Enlaces a aviso legal e información de cookies -->
+    <div class="col100">
+        <div class="legales">
+            <a href="./contacto.html#avisolegal">Aviso Legal</a>
+    
+            <a href="./contacto.html#cookies">Cookies</a>
+        </div>
+        <!-- fin de legales -->
+    </div>
+    <!-- FIN DE COL100  -->
+
+    <div class="col100 minifooter white">
+        <p>&reg; 2.018 Zu Hause.GmbH</p>
+    </div>
+
+
+</footer>
+
+
+</div>
+<!-- FIN DE GRANCONTENEDOR -->
+
+</body>
+</html>

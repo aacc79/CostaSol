@@ -1,0 +1,1058 @@
+/* Antonio Alejandro Caballero Chamizo*/
+/* Jueves, 08/02/2018 */
+
+/* 1. UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    border: 2px solid green;
+}
+
+/* SECTIONING AND STRUCTURING */
+body{
+    /* ____Text___________________ */
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+    /* ____Color__________________ */
+        color: #666666;
+}
+
+.grancontenedor{
+    /* centramos */
+    margin: auto;
+    flex-flow: row nowrap;
+}
+
+header{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 20px;
+}
+
+header .burguer{
+    display: none;
+    margin-left: 20px;
+    font-size: 36px;
+}
+
+
+/* LISTS */
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li{
+    padding: 40px;
+}
+
+header nav ul li a{
+color: #666666;
+text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #ff0000;
+    }
+
+ul{
+text-decoration: none;
+}
+
+ul, ol, li{
+color: #666666;
+}
+/* ATTRIBUTES */
+
+.logoimagen{
+width: 50px;
+}
+
+
+.hr_header{
+height: 1px;
+border-bottom: solid 3px #ff0000;
+margin-top: 100px; 
+background: transparent;
+}
+
+.hr_legal{
+    height: 1px;
+    border-bottom: solid 3px #ff0000;
+    margin-top: 10px; 
+    background: transparent;
+    }
+
+
+
+
+    
+    
+.hero{
+    height: 100vh;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ff0000;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero h2 {
+        margin-bottom: 60px;
+        color: white;
+    }
+
+    .hero a{
+        margin-bottom: 400px;
+        font-size: 60px;
+        color: #ff0000;
+        }
+    
+
+.fila{
+    margin-top: 80px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila_ultima{
+    margin-bottom: 40px;
+}
+.introduccion{
+    flex:1 1 35%;
+}
+.aside{
+    flex:1 1 65%;
+}
+.centrado{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* para que se ponga en el centro de la caja */
+    justify-content: center;
+
+}
+        .col100{
+            border: purple solid 5px;
+            padding: 10px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-flow: row nowrap;
+            /* clear: both; */
+            flex-grow: 1;
+        }
+        .col100a{
+
+            padding: 10px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }  
+        
+        .col66{
+            padding: 10px;
+            width: 66%;
+            justify-content: center;
+            align-items: center;
+        }         
+
+        .col50{
+            border: solid 1px red;
+            flex-grow: 1;
+            padding: 10px;
+            max-width: 50%;
+            text-align: justify;
+        }
+
+        .col45{
+            border: solid 1px red;
+            flex-grow: 1;
+            padding: 10px;
+            max-width: 45%;
+            text-align: justify;
+        }
+
+        .col33{
+            border: solid 1px red;
+            flex-grow: 1;
+            padding: 10px;
+            max-width: 33%;
+            text-align: justify;
+        }
+
+        .col25{
+            border: solid 1px red;
+            flex-grow: 1;
+            padding: 10px;
+            max-width: 25%;
+            text-align: justify;
+        }
+
+        .col3{
+            border: solid 1px red;
+            flex-basis: 300px;
+            /* como el factor de crecimiento es el doble que la otra columna,
+            por cada 3px libres que haya, este toma 2 y el otro 1 */
+            flex-grow: 3;
+            padding: 10px;
+        }
+
+        .flex_izq{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+        }
+        .flex_der{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+        }
+.grid{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    /* grid-gap: 40px; */
+    justify-content:center;
+    }
+
+
+
+.botones_grandes_inicio{
+    justify-content: space-around;
+
+}
+
+.iconolink{
+    text-align: center;
+    border: double 2px red;
+    border-radius: 3px;
+}
+.iconolink img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+.iconolink a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.iconolink2{
+    display: none;
+    text-align: center;
+    border: double 2px red;
+    border-radius: 3px;
+}
+.iconolink2 img{
+    width: 100px;
+    margin-bottom: 15px;
+}
+.iconolink2 a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.boton{
+    margin: 40px;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.separador{
+    width: 200px;
+    display: none;
+    border: solid 2px darkred;
+}
+
+
+.newsletter{
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.newsletter2{
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.inputnewsletter {
+    margin: 10px 20px;
+    color: darkred;
+    font-size: 20px;
+    padding: 15px;
+    padding-left: 50px;
+    border: solid 4px #ff0000;
+    background-image: url('../img/email.png');
+    background-repeat: no-repeat;
+
+}
+    .botonnewsletter{
+        margin: 10px 20px;
+        color:white;
+        background-color: #ff0000;
+        font-size: 24px;
+        padding: 15px;
+        border-radius: 3px;
+        border: solid 3px #ff0000;
+    }
+
+    .botonnewsletter:hover{
+        background-color: rgb(204, 7, 7);
+        border: solid 3px rgb(204, 7, 7);
+        cursor: pointer;
+    }
+
+
+    * FOOTER */
+
+    .colizquierda p{
+        color: white;
+    }
+    .white{
+        color: white;
+    }
+    .top{
+        font-size: 50px;
+        color: white;
+        position: absolute;
+        top: -40px;
+        right: 48.5%;
+        transform: translateX(50%);
+    
+        background-color: black;
+        height: 60px;
+        border-radius: 60px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .top:hover{
+        color: white;
+        font-size: 50px;
+        /* background-color:transparent; */
+        border: none;
+        border-radius: 59px; 
+    }
+    
+    /* Ponemos al footer un background sacado de lea verau.com */
+    
+    footer{
+        position: relative;
+        font-size: 18px;
+         /* ponemos los contenedores uno al lado de otro */
+         display: flex;
+         /* Si las cajas no caben, pon una debajo de otra */
+         flex-wrap: wrap;
+         justify-content: center;
+        background-color: #ff0000; 
+        background-size: 100px 100px;
+    }
+    
+    .minifooter p{
+        font-size: 10px;
+        padding: 0;
+        letter-spacing: 2px;
+    }
+    .colizquierda{
+        width: 33%;
+        flex-grow: 1;
+        border: solid 1px greenyellow;
+        text-align: justify;
+        padding: 20px;
+        /* así evito que las palabras se salgan del div */
+        word-wrap: break-word;
+        /* white-space: nowrap; */
+        margin-right: 25px;
+    }
+    
+    /* hacemos que los p de la columna izquierda no queden tan espaciados entre sí */
+    .colizquierda p{
+        padding: 5px;
+    }
+    
+    .row{
+        flex-direction: row;
+    }
+    
+    .colcentro{
+        /* width: 33%; */
+        flex-grow: 1;
+        border: solid 1px greenyellow;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+    .colcentro a{
+        color: white;
+    }
+    .colcentro2{
+        display: none;
+    }
+    .colcentro2 a{
+        color: white;
+    }
+
+    .colderecha{
+        width: 33%;
+        flex-grow: 1;
+
+        border: solid 1px greenyellow;
+        /* ponemos los iconos en columna */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }  
+
+.colderecha2{
+    display: none;
+}
+    
+    div.rrss{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .legales a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        color: white;    
+    }
+    .colcentro a{
+        color: white;
+        margin: 15px;
+    }
+    
+footer a{
+    text-decoration: none;
+    border: solid 2px transparent;
+}
+
+footer a:hover{
+    background-color: black;
+    border: solid 2px black;
+    border-radius: 3px;
+}
+
+footer .rrss_icon:hover{
+        color: black;
+        background-color:transparent;
+        border: none;
+        border-radius: initial;        
+    }
+    
+.activo{   
+    padding: 3px;
+    border: solid 2px black;  
+        
+    }
+    
+    
+    /* damos formato a los enlaces en la columna derecha del footer */
+    .rrss a{
+        font-size: 60px;
+        color: white;
+    
+    }
+
+/* COMPRA, breadcrums */
+
+
+.barra_breadcrumbs{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.barra_breadcrumbs a{
+    color: #666666;
+    text-decoration: none;
+}
+
+.barra_breadcrumbs a:hover{
+    color: #ff0000;
+}
+
+/* COMPRA, Barra sticky*/
+
+.pegajoso{
+    /* Que se mantenga siempre a la vista */
+    /* position: fixed; */
+    top: 160px; 
+    text-align: left;
+    /* Que, además de bajar cuando hacemos scroll, sea visible por encima de los demás
+    elementos  */
+    z-index: 1;
+}
+.espaciopegajoso{
+    width: 300px;
+    height: 82px;
+}
+
+.botoncompra{
+    width: 300px;
+    height: 82px;
+    margin: 10px 20px;
+        color:white;
+        background-color: #D80027;
+        font-size: 18px;
+        padding: 15px;
+        border-radius: 3px;
+        border: solid 3px #D80027;
+}
+
+.botoncompra:hover{
+    background-color: #ff0000;
+    border: solid 3px #ff0000;
+    cursor: pointer;
+}
+
+
+/* COMPRA, paginación */
+
+.paginacion{
+    width: 100%;
+    /* para que se muestren en línea */
+    display: flex;
+    justify-content:space-between; 
+}
+.inferior{
+    margin-bottom: 50px;
+}
+.izquierda, .derecha{
+    flex-grow: 1;
+}
+.pagina{
+    flex-grow: 0.8;
+}
+.paginacion button{
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    background-color: #D80027;
+    color: white;
+    font-size: 22px;  
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.paginacion button:hover{
+    background-color: #ff0000;
+}
+/* COMPRA, tarjetas */
+
+.info button{
+    border-radius: 10px;
+    /* width: 30px; */
+    background-color: #D80027;
+    color: white;
+    padding: 5px;
+    font-size: 22px;  
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.info button:hover{
+    background-color: #ff0000;
+}
+
+.info h5{margin: 10px 0px;}
+
+ 
+.contenedortarjetas{
+    border: blue dashed 4px;
+    display: grid;
+    /* 3 columnas */
+    grid-template-columns:repeat(3,1fr);
+    /* tantas filas como sea preciso */
+    grid-template-rows: repeat(auto-fit,1fr);
+    grid-gap: 20px;
+    align-items: baseline;
+    font-size: 18px;
+    justify-content: space-around;
+    clear: both;
+    
+}
+.tarjeta{
+    width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* align-items: flex-end; */
+}
+.sa{justify-content: space-around;}
+.imagen{
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+}
+
+.imagen img{    
+    height: 200px;
+}
+.info{
+   width: fit-content;
+}
+.info p{
+    font-size: 13px;
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.anteslegal{
+    height: 100vh;
+}
+
+/* Contacto, cuadro de datos de empresa */
+
+.address{
+    text-align: left;
+}
+
+
+.legalmargin{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.legalmargin h1{
+    margin-bottom: 20px;
+}
+.legalmargin h2{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.legalmargin p{
+    text-align: justify;
+}
+.index h1{
+    margin-bottom: 15px;
+}
+
+
+/* DETALLES DE COMPRA Y ALQUILER */
+
+h1.deta{
+    color: #D80027;
+}
+h1.deta2{
+    display: none;
+    color: #D80027;
+    font-size: 20px;
+}
+
+div.deta{
+    display: flex;
+    justify-content: space-around;
+}
+
+div.cajadetalle{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+div.detadescripcion{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: justify;
+    padding: 20px;
+}
+.detadescripcion h2{
+    border-bottom: solid 2px #d80027;
+    margin-bottom: 15px;
+}
+.detadescripcion p{
+    margin-bottom: 40px;
+}
+
+.deta50{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 50%;
+    height: 450px;
+    background-color: #d80027;
+    color: black;
+}
+
+.deta50textarea{
+    width: 100%;
+}
+
+.deta50comp{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+
+.deta50comp.enviar input{
+    background-color: transparent;
+    border: solid black 3px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+
+.deta50comp.enviar input:hover{
+    background-color: #ff0000;
+    border: solid black 3px;
+    border-radius: 3px;
+    letter-spacing: 3px;
+}
+
+.deta50med{
+    width: 50%;
+    height: fit-content;
+}
+
+.deta50 p{
+    margin: 10px;
+}
+
+.detamapa2{
+    display:none;
+}
+
+.detamapa3{
+    display: none;
+}
+
+.contenedorfotos{
+    display: grid;
+    /* queremos 2 columnas, 1 fracción */
+    grid-template-columns: repeat(2,1fr);
+    /* separamos las imágenes entre sí */
+    grid-gap: 20px;
+}
+.contenedorfotos img{
+    width: 500px;
+    height: 300px;
+    border: #D80027 solid 3px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* _____________________MEDIA QUERIES________________________________________ */
+/* -------------------------------------------------------------------------- */
+
+
+@media (max-width: 1278px){
+    .colizquierda p{
+        font-size: 15px;
+    }
+    .formulariomapa{
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+    .deta50{
+        width: 90%;
+    }
+    .contenedortarjetas{
+        display: grid;
+        /* cambiamos a 2 columnas para no tener que encoger las imágenes */
+        grid-template-columns:repeat(2,1fr);
+        /* tantas filas como sea preciso */
+        grid-template-rows: repeat(auto-fit,1fr);
+        grid-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        align-items: baseline;
+        font-size: 18px;
+    }
+
+    /* Ajustamos el tamaño de las tarjetas */
+    .tarjeta{
+        width: 400px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+
+}
+
+@media (max-width: 1065px){
+    .col100{
+        flex-direction: column;
+    }
+    .flex_izq{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+    .row{
+        flex-direction: row;
+    }
+
+    /* Que los iconos informativos en detalle de compra y alquiler se vean en grid  */
+    div.col100.deta{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+    /* que imágenes de detalle en compra y alquiler pasen a mostrarse en columna de a uno */
+    .contenedorfotos{
+        display: grid;
+        /* queremos 1 columna, 1 fracción */
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* para aprovechar mejor el espacio, mostramos más grandes las imágenes */
+    .contenedorfotos img{
+        width: 800px;
+        height: 480px;
+        border: #D80027 solid 3px;
+        border-radius: 5px;
+    }
+
+}
+
+
+/* ...................para tablets....................... */
+
+/* de nuevo */
+@media (max-width: 858px){
+    .contenedorfotos img{
+        width: 600px;
+        height: 360px;
+        border: #D80027 solid 3px;
+        border-radius: 5px;
+    }
+    .contenedortarjetas{
+        /* pasamos a disponer las fichas en 1 sola columna
+        por razones de espacio */
+        grid-template-columns:repeat(1,1fr);
+        /* tantas filas como sea preciso */
+        grid-template-rows: repeat(auto-fit,1fr);
+        grid-gap: 15px;
+        align-items: baseline;
+        font-size: 15px;
+        justify-content: space-between;
+
+}
+
+
+
+
+@media (max-width: 800px){
+
+
+header{
+    justify-content: space-around;
+}
+/* Que se vea el menú hamburguesa */
+header .burguer{
+    display: initial;
+}
+/* Que no se vean los a del header, salvo el logo */
+header nav{
+    display: none;
+}
+
+
+/* Que las tarjetas se vean en columnas */
+.tarjeta{
+    flex-direction: column;
+}
+/* Que el info de las tarjetas ocupe todo el ancho */
+.info{
+    width: 100%;
+}
+/* Ajuste del footer */
+.colderecha{
+    width: fit-content;
+}
+}
+/* ...................intermedia....................... */
+@media (max-width: 710px){
+
+.noche{
+    width: 100%;
+}
+.botonnewsletter{
+    font-size: 20px;
+}
+.colcentro{
+    width: fit-content;
+}
+.colderecha{
+    display: none;
+}
+.colderecha2{
+    display: flex;
+}
+div .rrss{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+/* Ajustamos botones de compra y alquiler */
+.iconolink{
+    display: none;
+}
+div.botones_grandes_inicio{
+    flex-direction: column;
+}
+.iconolink2{
+    display: initial;
+    width: 100%;
+}
+div.row{
+    flex-direction: column;
+}
+.inputnewsletter{
+    width: 90%;
+
+    padding-left: 50px;
+}
+.botonnewsletter{
+    width: 90%
+}
+h1.deta{
+    font-size: 20px;
+}
+
+.detamapa{
+    display: none;
+}
+.detamapa2{
+    display: initial;
+}
+
+.detamapa3{
+    display: none;
+}
+
+}
+
+
+@media (max-width:605px){
+    .colcentro{
+        display: none;
+    }
+    .colcentro2{
+        display: initial;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenedorfotos img{
+        width: 437px;
+        height: 262px;
+        border: #D80027 solid 3px;
+        border-radius: 5px;
+    }
+
+    .detadescripcion h2{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 515px){
+    h1.deta{
+        display: none;
+    }
+    h1.deta2{
+        display: initial;
+    }
+    .detadescripcion h2{
+        font-size: 16px;
+    }
+    .detamapa{
+        display: none;
+    }
+    .detamapa2{
+        display: none;
+    }
+    
+    .detamapa3{
+        display: initial;
+    }
+}
+
+
+
+/* ...................para móviles....................... */
+@media (max-width: 442px){
+
+    .hero a{
+        margin-bottom: 360px;
+        font-size: 60px;
+        color: #ff0000;
+        }
+
+        .contenedorfotos img{
+            width: 300px;
+            height: 180px;
+            border: #D80027 solid 3px;
+            border-radius: 5px;
+        }
+
+        .detadescripcion h2{
+            font-size: 14px;
+        }
+
+
+    /* Ajustamos el tamaño de las imágenes y tarjetas */
+        .imagen{
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .tarjeta{
+            width: 300px;
+
+
+
+}
