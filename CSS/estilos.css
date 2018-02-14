@@ -138,16 +138,25 @@ background: transparent;
     align-items: center;
 }
 
+.fila p{
+    text-align: justify;
+}
+
 .fila_ultima{
     margin-bottom: 40px;
 }
 .introduccion{
-    flex:1 1 35%;
+   width: 35%;
+   padding: 50px;
+}
+.introduccion p{
+    /* margin-left: 150px; */
 }
 .aside{
-    flex:1 1 65%;
+    width: 65%;
 }
 .centrado{
+    margin-top: 20px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -166,6 +175,9 @@ background: transparent;
             /* clear: both; */
             flex-grow: 1;
         }
+
+        
+
         .col100a{
 
             padding: 10px;
@@ -182,10 +194,11 @@ background: transparent;
         }         
 
         .col50{
-            border: solid 1px red;
+            border: solid 4px red;
+            border-radius: 5px;
             flex-grow: 1;
             padding: 10px;
-            max-width: 50%;
+            width: 80%;
             text-align: justify;
         }
 
@@ -646,6 +659,27 @@ a.paginacion button{
     height: 100vh;
 }
 
+.contacto{
+    margin: 40px 0px;
+}
+
+
+
+.col100.contacto.colorcorporativo{
+    line-height: 2em;
+    background-color: #d80027;
+    color: white;
+}
+
+
+
+.mapa1{
+    display: none;
+}
+
+.mapa2{
+    display: none;
+}
 /* Contacto, cuadro de datos de empresa */
 
 .address{
@@ -668,9 +702,30 @@ a.paginacion button{
     text-align: justify;
 }
 .index h1{
+    text-align: center;
     margin-bottom: 15px;
 }
 
+.index.col50{
+ width: 700px;
+   padding: 55px;
+   line-height: 2em;
+}
+
+.index.col50 a{
+text-decoration: none;
+color: #D80027;
+}
+
+.lijustify{
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+.olpadding{
+    width: fit-content;
+    padding: 50px;
+}
 
 /* DETALLES DE COMPRA Y ALQUILER */
 
@@ -681,6 +736,12 @@ h1.deta2{
     display: none;
     color: #D80027;
     font-size: 20px;
+}
+
+.referencia{
+    color: #9c9b9b;
+    background-color: #d80027;
+    font-size: .8em;
 }
 
 div.deta{
@@ -699,9 +760,15 @@ div.detadescripcion{
     text-align: justify;
     padding: 20px;
 }
+
+.col100.detadescripcion{
+    padding: 30px;
+}
+
+
 .detadescripcion h2{
     border-bottom: solid 2px #d80027;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .detadescripcion p{
     margin-bottom: 40px;
@@ -796,6 +863,21 @@ div.detadescripcion{
 /* -------------------------------------------------------------------------- */
 
 
+
+@media (max-width: 1360px){
+
+    .introduccion{
+        width: 90%;
+    }
+    .col100.centrado{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .aside{
+        width: 90%;
+    }
+}
+
 @media (max-width: 1278px){
     .colizquierda p{
         font-size: 15px;
@@ -889,8 +971,6 @@ div.detadescripcion{
 }
 
 
-
-
 @media (max-width: 800px){
 
 
@@ -919,6 +999,16 @@ header nav{
 .colderecha{
     width: fit-content;
 }
+
+/* reducimos el tamaño del mapa de contactos */
+.mapa0{
+    display: none
+}
+
+.mapa1{
+    display: initial;
+}
+
 }
 /* ...................intermedia....................... */
 @media (max-width: 710px){
@@ -985,6 +1075,13 @@ h1.deta{
 
 
 @media (max-width:605px){
+
+    .introduccion{
+        width: 95%;
+        padding: 0px 5px 25px 0px;
+    }
+
+
     .colcentro{
         /* display: none; */
 
@@ -1008,6 +1105,21 @@ h1.deta{
 }
 
 
+@media (max-width: 550px){
+
+
+.mapa0{
+    display: none;
+}
+
+.mapa1{
+    display: none;
+}
+
+.mapa2{
+    display: initial;
+}
+}
 @media (max-width: 515px){
     h1.deta{
         display: none;
